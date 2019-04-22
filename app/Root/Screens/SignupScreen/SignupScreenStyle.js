@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
+import {color} from "../../../Theme";
 
 const styles = StyleSheet.create({
         container: {
@@ -8,29 +9,27 @@ const styles = StyleSheet.create({
         },
         innerContainer: {
             flex: 1,
-            marginLeft: 30,
-            marginRight: 30,
+            marginLeft: 15,
+            marginRight: 15,
             backgroundColor: '#ffffff',
             marginTop: -100,
             marginBottom: 25,
             borderColor: '#c9c9ca',
             borderRadius: 10,
             borderWidth: 1,
-            paddingLeft: 5,
-            paddingRight: 5,
-            paddingBottom: 25,
-            paddingTop: 10
+            padding: 20,
+
         },
         imageCcontainer: {
-            height: 230,
+            height: 150,
             alignItems: 'center',
-            backgroundColor: '#fee606',
+            backgroundColor: color.primary,
         },
         containerTop: {
             marginBottom: 5, alignItems: 'center', justifyContent: 'center',
         },
         image: {
-            marginTop: 20,
+
             height: 100,
             width: 100,
             alignSelf: 'center'
@@ -62,23 +61,22 @@ const styles = StyleSheet.create({
             marginTop: -40,
             paddingTop: 10,
             paddingBottom: 10,
-            backgroundColor: '#fee606',
+            backgroundColor: color.primary,
             borderRadius: 20,
             borderWidth: 1,
-            borderColor: '#fee606'
+            borderColor: color.primary
         },
 
         buttonstyleloginfb: {
             marginRight: 50,
             marginLeft: 50,
             marginTop: 20,
-
             paddingTop: 10,
             paddingBottom: 10,
-            backgroundColor: '#5c009a',
+            backgroundColor: color.primary,
             borderRadius: 20,
             borderWidth: 1,
-            borderColor: '#5c009a'
+            borderColor: color.primary,
         }, buttonstyleloginalready: {
             marginRight: 50,
             marginLeft: 50,
@@ -141,9 +139,9 @@ const styles = StyleSheet.create({
             top: 0,
             bottom: 0, zIndex: 2
         }, inputContainerStyle: {
-            marginTop: 10, borderRadius: 20, paddingLeft: 10, paddingRight: 10,
+            marginTop: 10, borderRadius: 5, paddingLeft: 10, paddingRight: 10,
             borderWidth: 1,
-            borderColor: '#fee606'
+            borderColor: color.primary
         }
     })
 ;

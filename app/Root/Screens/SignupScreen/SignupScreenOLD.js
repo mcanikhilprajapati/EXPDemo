@@ -3,7 +3,7 @@ import {ActivityIndicator, Image, ScrollView, Text, TouchableHighlight, Touchabl
 import {Dropdown} from 'react-native-material-dropdown';
 import logoImg from '../../../assets/tlogo.png';
 import styles from './SignupScreenStyle'
-import { TextInput } from 'react-native-paper';
+import {Input} from "react-native-elements";
 
 
 class SignupActivity extends Component {
@@ -43,38 +43,45 @@ class SignupActivity extends Component {
 
                     <ScrollView>
                         <Image source={logoImg} style={styles.image}/>
-                        <TextInput
-                            label='Name'
-                            value={this.state.text}
-                            onChangeText={text => this.setState({ text })}
-                            mode={'outlined'}
-                            style={{width:'100%',backgroundColor:'#ffffff'}}
+                        <View style={styles.containerTop}>
+
+
+                            <Input
+                                inputContainerStyle={styles.inputContainerStyle}
+                                placeholder='Name'
+                                shake={true}
+                                errorStyle={{color: 'red'}}
+                                errorMessage={this.state.isError}
+                            />
+                        </View>
+                        <View style={styles.containerTop}>
+                            <Input
+                                inputContainerStyle={styles.inputContainerStyle}
+                                placeholder='Email'
+                                shake={true}
+                                errorStyle={{color: 'red'}}
+                                errorMessage={this.state.isError}
+                            />
+                        </View>
+
+
+                        <Input
+                            inputContainerStyle={styles.inputContainerStyle}
+                            placeholder='Password'
+                            shake={true}
+                            errorStyle={{color: 'red'}}
+                            errorMessage={this.state.isError}
+                        />
+                        <Input
+                            inputContainerStyle={styles.inputContainerStyle}
+                            placeholder='Confirm Password'
+                            shake={true}
+                            errorStyle={{color: 'red'}}
+                            errorMessage={this.state.isError}
                         />
 
-                        <TextInput
-                            label='Email'
-                            value={this.state.text}
-                            onChangeText={text => this.setState({ text })}
-                            mode={'outlined'}
-                            style={{width:'100%',backgroundColor:'#ffffff'}}
-                        />
 
-                        <TextInput
-                            label='Password'
-                            value={this.state.text}
-                            onChangeText={text => this.setState({ text })}
-                            mode={'outlined'}
-                            style={{width:'100%',backgroundColor:'#ffffff'}}
-                        />
-                        <TextInput
-                            label='Confirm Password'
-                            value={this.state.text}
-                            onChangeText={text => this.setState({ text })}
-                            mode={'outlined'}
-                            style={{width:'100%',backgroundColor:'#ffffff'}}
-                        />
-
-                        <View style={[styles.inputContainerStyle, { height: 55}]}>
+                        <View style={[styles.inputContainerStyle, {marginLeft: 10, marginRight: 10, height: 40}]}>
 
                             <Dropdown
                                 value={"Men"}
@@ -86,7 +93,7 @@ class SignupActivity extends Component {
                                 onChangeText={(text) => {
                                     this.setState({gender: text})
                                 }}
-                                containerStyle={{paddingLeft: 5, marginRight: 5, marginTop: -23}}
+                                containerStyle={{paddingLeft: 5, marginRight: 5, height: 40, marginTop: -23}}
                             />
 
                         </View>

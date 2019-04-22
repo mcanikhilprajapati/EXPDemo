@@ -21,7 +21,7 @@ export default class SplshScreen extends Component {
                     <ActivityIndicator size="large" style={styles.progressView}/>
 
                     <Text style={styles.createdBy}>{'Created by Nikhil Prajapati'}</Text>
-                    <Text>{'Whatsapp : 9408845776'}</Text>
+                    <Text>{'Mail: mca.nikhilprajapati@gmail.com'}</Text>
                 </View>
             </View>
 

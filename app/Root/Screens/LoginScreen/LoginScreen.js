@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import {ActivityIndicator, Image, Text, TouchableHighlight, View} from 'react-native';
-import {Input} from 'react-native-elements';
 import styles from './LoginScreenStyle'
 import tlogo from '../../../assets/tlogo.png'
-
+import { TextInput } from 'react-native-paper';
 class LoginScreen extends Component {
     constructor(props) {
         super(props);
@@ -28,22 +27,22 @@ class LoginScreen extends Component {
 
                     <Image source={tlogo} style={styles.image}/>
                     <View style={styles.containerTop}>
-                        <Input
-                            inputContainerStyle={styles.inputContainerStyle}
-                            placeholder='Username or email'
-                            shake={true}
-                            errorStyle={{color: 'red'}}
-                            errorMessage={this.state.isError}
-                        />
-                        <Input
-                            inputContainerStyle={styles.inputContainerStyle}
-                            placeholder='Password'
-                            shake={true}
-                            errorStyle={{color: 'red'}}
-                            errorMessage=''
+                        <TextInput
+                            label='Email'
+                            value={this.state.text}
+                            onChangeText={text => this.setState({ text })}
+                            mode={'outlined'}
+                            style={{width:'100%',backgroundColor:'#ffffff'}}
                         />
 
 
+                        <TextInput
+                            label='Password'
+                            value={this.state.text}
+                            onChangeText={text => this.setState({ text })}
+                            mode={'outlined'}
+                            style={{width:'100%',backgroundColor:'#ffffff'}}
+                        />
                     </View>
 
 

@@ -1,4 +1,6 @@
 import {StyleSheet} from "react-native";
+import {color} from "../../../Theme";
+
 
 const styles = StyleSheet.create({
     container1: {
@@ -8,12 +10,12 @@ const styles = StyleSheet.create({
     container2: {
         flex: 1,
         height: 20,
-        marginLeft: 30,
-        marginRight: 30,
+        marginLeft: 15,
+        marginRight: 15,
         backgroundColor: '#ffffff',
         marginTop: -90,
         marginBottom: 10,
-        borderColor: '#fee606',
+        borderColor: color.primary,
         borderRadius: 10,
         borderWidth: 0.5,
         padding: 10,
@@ -26,18 +28,18 @@ const styles = StyleSheet.create({
         color: '#34495e',
     },
     container: {
-        height: 250,
+        height: 150,
         alignItems: 'center',
-        backgroundColor: '#fee606',
+        backgroundColor: color.primary,
     },
     containerTop: {
-        flex: 1, padding: 15,
-        alignItems: 'center', justifyContent: 'center',
+        flex: 1, padding: 10,
+
     },
     image: {
-        height: 100,
-        width: 100,
-        alignSelf: 'center', marginTop: 20,
+        height: 80,
+        width: 80,
+        alignSelf: 'center'
     },
     text: {
         color: '#000',
@@ -64,10 +66,10 @@ const styles = StyleSheet.create({
         marginTop: -30,
         paddingTop: 10,
         paddingBottom: 10,
-        backgroundColor: '#fee606',
+        backgroundColor: color.primary,
         borderRadius: 20,
         borderWidth: 1,
-        borderColor: '#fee606'
+        borderColor: color.primary
     },
 
     buttonstyleloginfb: {
@@ -77,10 +79,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         paddingTop: 10,
         paddingBottom: 10,
-        backgroundColor: '#fee606',
+        backgroundColor: color.primary,
         borderRadius: 20,
         borderWidth: 1,
-        borderColor: '#fee606'
+        borderColor: color.primary
     },
     buttonstyleloginf: {
         marginRight: 50,
@@ -91,7 +93,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
         borderRadius: 20,
         borderWidth: 1,
-        borderColor: '#fee606'
+        borderColor:color.primary
     }
     , submitfb: {
         marginRight: 20,
@@ -99,7 +101,7 @@ const styles = StyleSheet.create({
         marginTop: 40,
         paddingTop: 10,
         paddingBottom: 10,
-        backgroundColor: '#fee606',
+        backgroundColor: color.primary,
         borderRadius: 10,
         borderWidth: 1,
         borderColor: '#fff'
@@ -131,7 +133,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         textAlign: 'center',
     }, submitTextPrimary: {
-        color: '#fee606',
+        color: color.primary,
         textAlign: 'center',
     },
     imageRight: {
@@ -147,7 +149,7 @@ const styles = StyleSheet.create({
         color: '#ff041f', textAlign: 'center', fontSize: 12
     }, loaderStyle: {
         alignItems: 'center', justifyContent: 'center',
-        backgroundColor: '#00000099',
+        backgroundColor: '#220a9c99',
         position: 'absolute',
         left: 0,
         right: 0,
@@ -160,7 +162,7 @@ const styles = StyleSheet.create({
 
     },inputContainerStyle:{marginTop:10, borderRadius: 20,paddingLeft:10,paddingRight:10,
         borderWidth: 1,
-        borderColor: '#fee606'}
+        borderColor: color.primary}
 
 });
 
